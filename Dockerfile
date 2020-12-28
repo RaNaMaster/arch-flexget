@@ -10,7 +10,7 @@ RUN chmod +x /root/*.sh /home/nobody/*.sh && \
 	/bin/bash /root/install.sh
 
 VOLUME ["/config"]
-VOLUME ["/mnt"]
+VOLUME ["/downloads"]
 
 EXPOSE 3539/tcp
 CMD ["/bin/bash", "/root/init.sh"]
